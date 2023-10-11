@@ -1,0 +1,19 @@
+meta {
+  name: Call-5-day-3-hour-forecast-data
+  type: http
+  seq: 2
+}
+
+get {
+  url: https://{{url}}/data/2.5/forecast?lat=55.67571339380345&lon=12.568604509394344&lang=da&appid={{appid}}&cnt=2
+  body: none
+  auth: none
+}
+
+query {
+  lat: 55.67571339380345
+  lon: 12.568604509394344
+  lang: da
+  appid: {{appid}}
+  cnt: 2
+}
