@@ -1,0 +1,17 @@
+meta {
+  name: CurrentWeather
+  type: http
+  seq: 1
+}
+
+get {
+  url: https://{{url}}/data/2.5/weather?lat=55.67571339380345&lon=12.568604509394344&appid={{appid}}
+  body: none
+  auth: none
+}
+
+query {
+  lat: 55.67571339380345
+  lon: 12.568604509394344
+  appid: {{appid}}
+}
